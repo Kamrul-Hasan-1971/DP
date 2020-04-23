@@ -11,7 +11,7 @@ ll fun()
     {
         for( j = a ; j>=weight[i] ; j-- )
         {
-            dp[j] = max( 0ll , item[i]+dp[j-weight[i]]);
+            dp[j] = max( dp[j] , item[i]+dp[j-weight[i]]);
         }
     }
     return dp[a];
@@ -27,4 +27,3 @@ int main()
     printf("%lld\n",fun());
     return 0 ;
 }
-//https://www.spoj.com/problems/LKS/
