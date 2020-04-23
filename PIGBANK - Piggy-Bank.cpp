@@ -30,9 +30,8 @@ int main()
         ll total = b-a;
         for( i = 0 ; i <c ; i++) scanf("%lld%lld",&ara[i],&wt[i]);
         ll ans = fun(0,total);
-        if(!chk) printf("This is impossible.");
+        if(!chk) printf("This is impossible.\n");
         else printf("The minimum amount of money in the piggy-bank is %lld.\n",ans);
     }
     return 0 ;
 }
-//https://www.spoj.com/problems/PIGBANK/cstart=70
